@@ -10,7 +10,7 @@ VKATZI_REPO_URL = https://github.com/KatziIndustries/vkatzi.git
 VKATZI_DIR = vkatzi
 VKATZI_O = build/vkatzi.o
 
-SRCS := $(wildcard *.cpp)
+SRCS := $(wildcard src/*.cpp)
 OBJS := $(SRCS:.cpp=.o)
 
 .PHONY: all clone build-vkatzi clean run

@@ -1,4 +1,4 @@
-#include "vkatzi/src/vkatzi.h"
+#include "cli.h"
 #include <iostream>
 
 #ifndef GIT_HASH
@@ -12,10 +12,10 @@
 int main()
 {
     std::cout << "Welcome to "<< TARGET << "-" << GIT_HASH << std::endl;
-    //std::cout << "Type \".help\" for more information." << std::endl;
+    std::cout << "Type \".help\" for more information." << std::endl;
      
 
-    Input(std::cin);
+    cli_input(std::cin);
 
     return 0;
 }
